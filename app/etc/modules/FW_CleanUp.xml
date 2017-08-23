@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <FW_CleanUp>
+            <active>true</active>
+            <codePool>local</codePool>
+        </FW_CleanUp>
+    </modules>
+
+</config>

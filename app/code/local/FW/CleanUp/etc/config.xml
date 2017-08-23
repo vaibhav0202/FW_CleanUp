@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<modules>
+	<FW_CleanUp>
+		<version>1.0.0</version>
+	</FW_CleanUp>
+</modules>
+<global>
+	<models>
+		<cleanup>
+			<class>FW_CleanUp_Model</class>
+		</cleanup>
+	</models>
+</global>
+
+<!--This section is a place holder for old orders that used the 'sterling' as a payment method, this class is required to load those orders - the STERLING module got removed on 1/5/2016-->
+<default>
+	<payment>
+		<sterling>
+			<active>0</active>
+			<model>cleanup/payment</model>
+			<title>Credit Card (Sterling Payment Technologies)</title>
+			<order_status>1</order_status>
+			<cctypes>AE,VI,MC,DI</cctypes>
+			<currency>USD</currency>
+			<payment_action>authorize</payment_action>
+		</sterling>
+	</payment>
+</default>
+</config>
